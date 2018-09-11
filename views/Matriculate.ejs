@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Matricúlate</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css" >
+
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="text-xs-center">
+      <h1>Matricular al estudiante</h1>
+    </div>
+    <div class="container-fluid center_div">
+      <div class="row">
+        <div class="col-md-5 col-offset-7 text-xs-center">
+
+          <form action="/Matriculate" method="POST">
+            Nombre: <input type="text" name="name" id="name" autofocus required/>
+            <br/>
+            <br/>
+            Carrera:
+            <select class="selectpicker" name="degree">
+              <option selected value="Ingeniería de sistemas">Ingeniería de sistemas</option>
+              <option value="Ingeniería mecánica">Ingeniería mecánica</option>
+              <option value="Finanzas">Finanzas</option>
+            </select>
+            <br/>
+            <br/>
+            Celular: <input type="text" name="cel" id="cel" required />
+            <br/>
+            <br/>
+            Cédula: <input type="text" name="id" id="id" required />
+            <br/>
+            <br/>
+            Dirección del hogar: <input type="text" name="addressHome" id="addressHome" autofocus required/>
+            <br/>
+            <br/>
+            Código del estudiante: <input type="text" name="codeStudent" id="codeStudent" autofocus required/>
+            <br/>
+            <br/>
+            <input class="btn btn-primary" id="sub" type="submit" name="genbloc" value="Generar bloque" />
+          </form>
+          <%if(hash !== "null"){%>
+            <h4>Código hash minando: <%-hash%></h4>
+          <%}%>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

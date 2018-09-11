@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Matricúlate</title>
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="text-xs-center">
+      <h1>Consultar acta de grado</h1>
+    </div>
+    <div class="container-fluid center_div">
+      <div class="row">
+        <div class="col-md-5 col-offset-7 text-xs-center">
+          <form class="" action="/getCertificate" method="POST">
+              Código hash: <input type = "text" name = "hashCode" autofocus required value='<%-codigo%>' />
+            <br>
+            <br>
+            <input class="btn btn-primary" id="sub" type = "submit" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

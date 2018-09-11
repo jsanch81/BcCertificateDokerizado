@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="text-xs-center center-xs">
+      <h4>Ingresa tu correo electrónico</h4>
+    </div>
+    <div class="container-fluid center_div">
+      <div class="row">
+        <div class="col-md-5 col-offset-7 text-xs-center">
+          <form id="login" action="/signIn" method="post">
+            <input type="text" name="email" placeholder="Email">
+            <br>
+            <input class="btn btn-primary" id="sub" type="submit" name="login" value="login">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="text-xs-center center-xs">
+      <%if(errorMessage){%>
+      <h2 style="color:red">¡<%-errorMessage%>!</h2>
+      <%}%>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+body {
+  /* margin-left: 25%; */
+  /* margin-right: 25%; */
+  margin-top: 0%;
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input {
+  width: 500px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  padding: 5px;
+}
+
+h1, h2 {
+  /* display: inline-block; */
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align:center;
+
+}
+
+h2 {
+  color: #AAA;
+  font-size: 32px;
+}
+
+h3 {
+  font-weight: normal;
+  color: #AAA;
+  font-size: 24px;
+}
+
+#op{
+    height: 40px;
+    width: 90%;
+    font-size: 1.2em;
+}
+#tag{
+    font-size: 1.7em;
+}
+#sub{
+  width: 70%;
+  display: block;
+  margin: 10px auto;
+}
+.sel, .send2, #accounts{
+    display: none;
+}
+.act{
+    display: block !important;
+}
+
+.center_div{
+    margin: 0 auto;
+    width:45% /* value of your choice which suits your alignment */
+}
+.main{
+  top: 0px;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: justify;
+    display:flex;
+    justify-content: space-between;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+    color: white;
+}

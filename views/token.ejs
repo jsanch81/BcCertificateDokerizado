@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Token</title>
+    <link href="stylesheets/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="text-xs-center center-xs">
+      <h4>Añade el token que se te envió a tu correo electrónico</h4>
+    </div>
+    <div class="container-fluid center_div">
+      <div class="row">
+        <div class="col-md-5 col-offset-7 text-xs-center">
+          <form id="login" action="/token" method="post">
+            <input type="password" name="token" placeholder="Token">
+            <br>
+            <input class="btn btn-primary" id="sub" type="submit" name="login" value="login">
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

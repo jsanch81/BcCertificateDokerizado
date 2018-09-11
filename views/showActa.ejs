@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="stylesheets/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="center-xs">
+      <h1>Información del acta de grado</h1>
+      <br>
+      <h4>Nombre: </h4> <%=acta[0]%>
+      <br>
+      <h4>Carrera: </h4> <%-acta[1]%>
+      <br>
+      <h4>Fecha: </h4> <%-acta[2]%>
+      <br>
+      <h4>Universidad: </h4> <%-acta[3]%>
+      <br>
+      <h4>Ciudad: </h4> <%-acta[4]%>
+      <br>
+      <h4>Estado del estudiante: </h4> <%-acta[5]%>
+      <br>
+      <h4>Número del bloque: </h4> <%-acta[6]%>
+      <br>
+      <h4>Código hash: </h4> <%-acta[7]%>
+      <br>
+    </div>
+    <div class="center-xs" id="qrcode" download="qr"></div>
+    <%if(hashCode !== '0x0000000000000000000000000000000000000000000000000000000000000000' && hashCode !== '') { %>
+      <script type="text/javascript">
+        $('#qrcode').qrcode({width: 200,height: 200,text: "http://localhost:3000/getCertificate?hashCode=<%-hashCode%>"});    </script>
+      </body>
+    <%}%>
+</html>
