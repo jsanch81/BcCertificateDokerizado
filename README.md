@@ -5,7 +5,7 @@
 Los comandos para ejecutar son los siguientes
 
 # Contruir el contenedor de la base de datos
-´docker run --name mongo -d mongo mongod --smallfiles´
+- ´docker run --name mongo -d mongo mongod --smallfiles´
 
 # Se ingresa en el contenedor y se crea la base de datos con el nombre de blocklife
 ´docker exec -it mongo bash´
